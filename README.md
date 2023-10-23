@@ -21,8 +21,8 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
 
 1. **Clone the repository**:
 
-  ```python 
-  git clone https://github.com/gaspard-tag-en/xhec-mlops-project-student.git 
+  ```python
+  git clone https://github.com/gaspard-tag-en/xhec-mlops-project-student.git
   ```
 
 
@@ -33,8 +33,8 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
 
 
 3. **Set up a virtual environment**:
-  ```python 
-  conda create --name x-hec-solution python=3.9  
+  ```python
+  conda create --name x-hec-solution python=3.9
   conda activate x-hec-solution
   ```
 
@@ -45,10 +45,16 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
   ```
 
 # Usage
- To run on data : 
+ To run on data :
  ```pyhton
  python src/modelling/main.py "data/abalone.csv"
  ```
+
+# Dockerize
+To Build a Docker image from this repository :
+```pyhton
+docker build -t abalone_age:v0 . -f Dockerfile.app
+```
 
 # Acknowledgements
 Guillaume de Surville,
