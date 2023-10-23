@@ -12,7 +12,7 @@ def load_data(path: str):
     return pd.read_csv(path)
 
 def compute_target(df: pd.DataFrame):
-    return df['Rings'] + 1.5
+    return df['Rings'].map(lambda x : x + 1.5)
 
 def extract_x_y(df):
     X = df.drop('Rings', axis=1)
