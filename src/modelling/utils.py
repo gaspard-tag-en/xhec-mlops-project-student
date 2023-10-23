@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 
 
 @flow
-def save_to_pickle(pipeline: Pipeline, file_path: os.PathLike):
+def save_to_pickle(pipeline: Pipeline, file_path: str):
     """
     Save a pipeline to a pickle file.
 
