@@ -45,7 +45,10 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
   ```
 
 # Usage
- to run on data : python src/modelling/main.py "data/abalone.csv"
+ To run on data : 
+ ```pyhton
+ python src/modelling/main.py "data/abalone.csv"
+ ```
 
 # Acknowledgements
 Guillaume de Surville,
