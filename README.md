@@ -40,9 +40,9 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
  to run on data : python src/modelling/main.py "data/abalone.csv"
 
 # Acknowledgements
-Guillaume de Surville
-Matthieu Haguenauer
-Gaspard de Fommervault
-Kenzo Bounhecta
-Alexis Constensoux
+Guillaume de Surville,
+Matthieu Haguenauer,
+Gaspard de Fommervault,
+Kenzo Bounhecta,
+Alexis Constensoux,
 Marine Chouraqui
