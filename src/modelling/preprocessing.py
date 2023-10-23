@@ -25,7 +25,7 @@ def extract_x_y(df):
     return X, y
 
 
-@task
+@flow
 def define_pipeline(cat_cols: List[str]):
     categorical_transformer = Pipeline(steps=[("onehot", OneHotEncoder(handle_unknown="ignore"))])
 
