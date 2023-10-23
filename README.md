@@ -21,20 +21,24 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
 
 1. **Clone the repository**:
 
-  git clone https://github.com/gaspard-tag-en/xhec-mlops-project-student.git
+  ```python 
+  git clone https://github.com/gaspard-tag-en/xhec-mlops-project-student.git ```
 
 
 2. **Navigate to the project directory**:
-  cd xhec-mlops-project-student
+  ```python
+  cd xhec-mlops-project-student```
 
 
 3. **Set up a virtual environment**:
+  ```python 
   conda create --name x-hec-solution python=3.9  
-  conda activate x-hec-solution
+  conda activate x-hec-solution```
 
 
 4. **Install dependencies**:
-  pip install -r requirements-dev.txt
+  ```pyhton
+  pip install -r requirements-dev.txt```
 
 # Usage
  to run on data : python src/modelling/main.py "data/abalone.csv"
