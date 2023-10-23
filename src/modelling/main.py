@@ -13,6 +13,9 @@ def main(trainset_path: os.PathLike) -> None:
     df_train = preprocessing.load_data(trainset_path)
     # Preprocess data
     X, y = preprocessing.extract_x_y(df_train)
+    y = y.to_frame()
+    print(f"This is y:  {type(y)}")
+    print(f"This is X:  {type(X)}")
     pipeline = preprocessing.define_pipeline(cat_cols=["Sex"])
     # (Optional) Pickle encoder if need be
 

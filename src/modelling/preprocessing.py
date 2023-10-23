@@ -18,14 +18,14 @@ def compute_target(df: pd.DataFrame):
     return df["Rings"].map(lambda x: x + 1.5)
 
 
-@task
+@flow
 def extract_x_y(df):
     X = df.drop("Rings", axis=1)
     y = compute_target(df)
     return X, y
 
 
-@task
+@flow
 def define_pipeline(cat_cols: List[str]):
     categorical_transformer = Pipeline(steps=[("onehot", OneHotEncoder(handle_unknown="ignore"))])
 

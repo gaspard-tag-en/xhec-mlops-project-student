@@ -6,8 +6,8 @@ from prefect import flow, task
 from sklearn.pipeline import Pipeline
 
 
-@task
-def save_to_pickle(pipeline: Pipeline, file_path: os.PathLike):
+@flow
+def save_to_pickle(pipeline: Pipeline, file_path: str):
     """
     Save a pipeline to a pickle file.
 

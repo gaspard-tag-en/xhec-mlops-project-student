@@ -1,4 +1,5 @@
 import pandas as pd
+import scipy.sparse
 from prefect import flow, task
 from sklearn.pipeline import Pipeline
 
