@@ -29,7 +29,7 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
 
 
 3. **Set up a virtual environment**:
-  conda create --name x-hec-solution python=3.9
+  conda create --name x-hec-solution python=3.9  
   conda activate x-hec-solution
 
 
