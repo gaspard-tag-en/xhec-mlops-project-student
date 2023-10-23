@@ -1,7 +1,10 @@
 # This module is the training flow: it reads the data, preprocesses it, trains a model and saves it.
-import preprocessing, training, utils
-import os
 import argparse
+import os
+
+import preprocessing
+import training
+import utils
 
 
 def main(trainset_path: os.PathLike) -> None:
@@ -10,13 +13,13 @@ def main(trainset_path: os.PathLike) -> None:
     df_train = preprocessing.load_data(trainset_path)
     # Preprocess data
     X, y = preprocessing.extract_x_y(df_train)
-    pipeline = preprocessing.define_pipeline(cat_cols=['Sex'])
+    pipeline = preprocessing.define_pipeline(cat_cols=["Sex"])
     # (Optional) Pickle encoder if need be
-    
+
     # Train model
     trained_model = training.train_model(pipeline, X, y)
     # Pickle model --> The model should be saved in pkl format the `src/web_service/local_objects` folder
-    utils.save_to_pickle(trained_model, '../local_models/model__v0.0.1.pkl')
+    utils.save_to_pickle(trained_model, "../local_models/model__v0.0.1.pkl")
 
 
 if __name__ == "__main__":
