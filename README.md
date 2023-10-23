@@ -2,15 +2,15 @@
 
 # MLOPS - Industrialization of the Abalone Age Prediction Model
 
-# Introduction
-This repository is the industrialization of the Abalone Age Prediction Model (https://www.kaggle.com/datasets/rodolfomendes/abalone-dataset) Kaggle contest. It takes the form of an API that runs locally that can be used to make prediction on new data for the age of abalone (column 'Rings') from physical measurements ("Shell weight", "Diameter", etc...).
-
 # Table of Contents
 1. [Introduction](#Introduction)
 2. [Installation](#Installation)
 3. [Usage](#Usage)
-4. [Contribution](#Contribution)
-5. [License](#License)
+5. [Acknowledgements](#Acknowledgements)
+
+# Introduction
+
+This repository is the industrialization of the Abalone Age Prediction Model (https://www.kaggle.com/datasets/rodolfomendes/abalone-dataset) Kaggle contest. It takes the form of an API that runs locally that can be used to make prediction on new data for the age of abalone (column 'Rings') from physical measurements ("Shell weight", "Diameter", etc...).
 
 # Installation
 
@@ -35,8 +35,6 @@ This repository is the industrialization of the Abalone Age Prediction Model (ht
 
 4. **Install dependencies**:
   pip install -r requirements-dev.txt
-
-
 
 # Usage
  to run on data : python src/modelling/main.py "data/abalone.csv"
