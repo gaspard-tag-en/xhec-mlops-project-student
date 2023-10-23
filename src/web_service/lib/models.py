@@ -2,14 +2,14 @@ from pydantic import BaseModel
 
 
 class InputData(BaseModel):
-    Sex: int
-    Length: int
-    Diameter: int
-    Height: int
-    Whole_weight: int
-    Shucked_weight: int
-    Viscera_weight: int
-    Shell_weight: int
+    Sex: str
+    Length: float
+    Diameter: float
+    Height: float
+    Whole_weight: float
+    Shucked_weight: float
+    Viscera_weight: float
+    Shell_weight: float
 
 
 class AbaloneAge(BaseModel):
